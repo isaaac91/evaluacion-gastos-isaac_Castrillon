@@ -1,0 +1,42 @@
+name: app_gastos
+description: "Una aplicación de Flutter para la gestión de gastos personales."
+
+# Evita que se publique accidentalmente en pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Asegúrate de tener una versión de SDK compatible
+
+# Dependencias requeridas por el proyecto
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Para manejo de estado simple (ChangeNotifierProvider, context.watch, etc.)
+  provider: ^6.1.2
+
+  # Para formatear fechas (DateFormat) y monedas (NumberFormat)
+  intl: ^0.19.0
+
+  # Para generar IDs únicos para los gastos
+  uuid: ^4.4.0
+
+  # Iconos de Cupertino (generalmente incluidos por defecto)
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+
+# Configuración específica de Flutter
+flutter:
+  # Asegúrate de que Material Design esté habilitado
+  uses-material-design: true
+
+  # Si tuvieras assets (imágenes, fuentes), irían aquí.
+  # assets:
+  #   - images/a_dot_burr.jpeg
